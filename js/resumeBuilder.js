@@ -80,4 +80,5 @@ var education = {
 education["city"] = "Shanghai, China";
 
 $("#main").append(work["position"]);
+$("#main").append(work["jobs"]);
 $("#main").append(education.name);
