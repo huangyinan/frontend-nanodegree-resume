@@ -1,6 +1,53 @@
 /*
 This is empty on purpose! Your code to build the resume will go here.
  */
+
+ var bio = {
+   name: "Sherry Huang",
+   role: "IT Project Engineer",
+   contacts: {
+     "mobile": "+86 137 6468 7524",
+     "email": "haishengjulan@live.cn",
+     "github": "huangyinan",
+     "twitter": "-",
+     "location": "Shanghai"
+   },
+   welcomeMessage: "Welcome to my page",
+   skills: ["JAVA","Oracle","Linux"],
+   biopic: "",
+   display: display
+ }
+
+ var education = {
+   schools: [
+     {
+       "name": "Shanghai University",
+       "location": "Shanghai",
+       "degree": "Master",
+       "majors": "CS",
+       "dates": "2015/03/01 until now",
+       "url": "http://www.shu.edu.cn/IndexPage.html"
+     },
+     {
+       "name": "Shanghai Normal University TianHua Colleage",
+       "location": "Shanghai",
+       "degree": "Bachelor",
+       "majors": "EE",
+       "dates": "2006/09/01 to 2010/06/30",
+       "url": "http://www.sthu.cn/"
+     },
+   ],
+   onlineCourses: [
+     {
+       "title": "FEND",
+       "school": "Udacity",
+       "dates": "2017-02-06 until now",
+       "url": "https://cn.udacity.com/"
+     }
+   ],
+   display: display
+ };
+
 var work = {
   jobs: [
     {
@@ -8,21 +55,21 @@ var work = {
       "title": "IT Project Engineer",
       "location": "Shanghai",
       "dates": "2015/03/01 until now",
-      "description": "Designing and implementing as Leading project engineer for MFS system"
+      "description": "Designing and implementing as Leading project engineer for WCS system"
     },
     {
       "employer": "FCH",
       "title": "IT Consultant",
       "location": "Shanghai",
       "dates": "2012/2/1 to 2015/03/01",
-      "description": "Consultant"
+      "description": "ERP Consultant"
     },
     {
       "employer": "New touch",
       "title": "programmer",
       "location": "Shanghai",
       "dates": "2010/7/1 to 2012/02/01",
-      "description": "programmer"
+      "description": "Programmer and Test Leader"
     }
   ]
 };
@@ -32,58 +79,26 @@ var projects = {
     {
       "title": "IT Project Leader",
       "dates": "20150301",
-      "description": ""
+      "description": "",
+      "images": "",
     },
     {
       "title": "IT Project Leader",
       "dates": "20150301",
-      "description": ""
+      "description": "",
+      "images": "",
     }
-  ]
-}
-
-var bio = {
-  name: "Sherry Huang",
-  role: "IT Project Engineer",
-  welcomeMessage: "Welcome to my page",
-  biopic: "",
-  contacts: {
-    mobile: "+86 137 6468 7524",
-    email: "haishengjulan@live.cn",
-    github: "huangyinan",
-    twitter: "-",
-    location: "Shanghai"
-  },
-  skills: ["JAVA","Oracle","Linux"]
-}
-
-var education = {
-  schools: [
-    {
-      "name": "Shanghai University",
-      "location": "Shanghai",
-      "majors": "CS",
-      "dates": 2015,
-      "url": "http://www.shu.edu.cn/IndexPage.html"
-    },
-    {
-      "name": "Shanghai Normal University TianHua Colleage",
-      "location": "Shanghai",
-      "majors": "EE",
-      "dates": 2010,
-      "url": "http://www.sthu.cn/"
-    },
   ],
-  onlineCourses: [
-    {
-      "title": "JavaScript Syntax",
-      "school": "Udacity",
-      "dates": 2017,
-      "url": "https://cn.udacity.com/"
-    }
-  ]
-};
+  display: display
+}
 
+
+
+
+
+function display() {
+
+}
 if (bio.role != null) {
   var formattedRole = HTMLheaderRole.replace("%data%",bio.role);
   $("#header").prepend(formattedRole);
